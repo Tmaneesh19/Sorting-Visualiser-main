@@ -1,0 +1,212 @@
+/* General body styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 20px 20px 30px 20px;
+    line-height: 1.6;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    /* Smooth gradient background */
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #252424;
+    text-shadow: 20px 20px 50px rgba(246, 241, 241, 0.3);
+}
+
+/* Navigation styling */
+nav {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+nav .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .col button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #ff6f61;
+    /* Coral red */
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+nav .col button:hover {
+    background-color: #ff4500;
+    /* Dark orange */
+    cursor: pointer;
+    border-color: #ff6f61;
+    transform: scale(1.1);
+}
+
+nav .col span {
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav input[type="range"] {
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #fff;
+    margin-top: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+nav input[type="range"]:focus {
+    outline: none;
+}
+
+/* Flex container for visualizing bars */
+.flex-container {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 100%;
+    height: 400px;
+    transition: 2s all ease-in-out;
+}
+
+/* Flex item (bars) styles */
+.flex-item {
+    background: #345a38;
+    /* Vibrant cyan */
+    border: 1px solid #ffffff;
+    width: 10px;
+    transition: height 0.2s ease, background 0.3s ease;
+    border-radius: 5px;
+}
+
+.flex-item:hover {
+    background: #ff9800;
+    /* Orange on hover */
+    transform: translateY(-10px);
+}
+
+/* Input section styles */
+#input {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#input span {
+    color: #fff;
+    font-size: 18px;
+}
+
+#size,
+#speed {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#size input,
+#speed input {
+    background: linear-gradient(to right, #ff6f61, #ff4500);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 10px;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#size input:hover,
+#speed input:hover {
+    background: linear-gradient(to right, #ff4500, #ff6f61);
+}
+
+/* Button group styling (Sorting buttons) */
+button {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: white;
+    border-radius: 8px;
+    padding: 12px 24px;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Hover effects for specific buttons */
+.newArray:hover {
+    background-color: #009688;
+    /* Teal */
+}
+
+.bubbleSort:hover {
+    background-color: #ffeb3b;
+    /* Yellow */
+    color: black;
+}
+
+.selectionSort:hover {
+    background-color: #3f51b5;
+    /* Indigo */
+}
+
+.insertionSort:hover {
+    background-color: #ff5722;
+    /* Deep orange */
+}
+
+.quickSort:hover {
+    background-color: #2196f3;
+    /* Blue */
+}
+
+.mergeSort:hover {
+    background-color: #9c27b0;
+    /* Purple */
+}
+
+/* Responsive layout adjustments */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .col {
+        text-align: center;
+    }
+}
